@@ -9,7 +9,7 @@ a:hover { color: rgb(0, 51, 153, 1); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 88.75%; /* 14px */
   line-height: 1.4;
 }
@@ -52,20 +52,30 @@ header a:hover {
     padding: 1em;
 }
 
+
 /* MAIN */
 main {
     background: rgba (0,0,0,.05)
 }
 
 /* HERO SECTION */
+header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
 .hero {
-    background-color: rgb(247, 212, 244);
+    background-image: url("../img/ferriswheel.jpg") ;
+    background-position: center;
+    background-size: cover;
+    padding: 24em 1em 6em 1em;
     text-align: center;
-    color: white;
-    padding: 6em 1em;
+    color: rgba(255, 255, 255, 0.5);
 }
 
+
 .hero h2 {
+    font-family: "Audiowide", sans-serif;
     font-size: 6em;
     line-height: 1;
     text-transform: uppercase;
@@ -73,12 +83,16 @@ main {
 }
 
 .hero p {
-    max-width: 30em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.678);
+    max-width: 40em;
     margin: 1em auto;
 }
 
 /* COURSES SECTION */
 .courses {
+    background-color: rgb(0, 0, 0);
     padding: 6em 1em;
     display: grid;
     justify-content: center;
@@ -90,7 +104,17 @@ main {
     list-style: none;
 }
 
+.courses a {
+    color: rgb(247, 212, 244);
+    text-decoration: none;
+}
+
+.courses a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 .courses h3 {
+    color:rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -98,7 +122,16 @@ main {
 footer {
     border-top: 1px solid rgba(0, 0, 0, 0. 5);
     padding: 1em;
-    background: rgb(247, 212, 244);
+    background: rgb(0, 0, 0);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.377);
 }
 
 /* LAYOUT */
