@@ -9,8 +9,8 @@ a:hover { color: rgb(0, 51, 153, 1); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 88.75%; /* 14px */
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -65,19 +65,13 @@ header a:hover {
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     list-style: none;
 }
 
 .site-nav a {
     display: block;
     padding: 1em;
-}
-
-.site-id::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* MAIN */
