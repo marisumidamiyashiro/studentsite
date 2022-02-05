@@ -205,9 +205,9 @@ button {
 button,
 a.button {
   display: inline-block;
-  background-color: #036;
-  border: 1px solid #036;
-  color: #fff;
+  background-color: rgba(255, 62, 136, .5);
+  border: 1px solid rgb(58, 22, 50);
+  color: rgb(255, 255, 255);
   padding: 0.75em 1em;
   border-radius: 0.32em;
   margin-top: 0.5em;
@@ -220,14 +220,14 @@ a.button {
 button.alt,
 a.button.alt {
   background-color: transparent;
-  border: 1px solid #036;
-  color: #036;
+  border: 1px solid rgb(255, 62, 136);
+  color: rgb(255, 62, 136);
 }
 
 button:hover,
 a.button:hover {
-  background-color: #003;
-  color: #fff;
-  border-color: #003;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgb(255, 255, 255);
   text-decoration: none;
 }
