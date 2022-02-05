@@ -74,6 +74,7 @@ header a:hover {
     padding: 1em;
 }
 
+
 /* MAIN */
 
 main {
@@ -125,6 +126,10 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.project li {
+    list-style-image: url("../img/star.png");
 }
 
 .courses a {

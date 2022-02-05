@@ -104,6 +104,7 @@ h6 {
 }
 
 /* #PARAGRAPHS */
+
 p {
     margin: 0 0 0.5em 0;
     max-width: 38em;
@@ -123,6 +124,7 @@ em {
 }
 
 /* #LINKS */
+
 a {
     color: rgb(255, 62, 136);
     text-decoration: none;
@@ -133,6 +135,7 @@ a:hover {
 }
 
 /* #BLOCK QUOTES  */
+
 blockquote {
     font-size: 1.142em;
     margin: 1.5em 0;
@@ -154,6 +157,7 @@ blockquote cite:before {
 }
 
 /* #HELPERS */
+
 .text-centered {
     text-align: center;
 }
@@ -183,6 +187,7 @@ blockquote cite:before {
 }
 
 /* HORIZONTAL RULES */
+
 hr {
     border: 0;
     height: 1px;
@@ -191,14 +196,18 @@ hr {
 }
 
 /* #MEDIA  */
+
 /* #IMAGES */
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* #COMPONENTS  */
+
 /* #BUTTONS */
+
 button {
     font-size: inherit;
 }
@@ -231,4 +240,156 @@ a.button:hover {
     color: rgb(0, 0, 0);
     border-color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+/* LAYOUT */
+
+* {
+    box-sizing: border-box;
+}
+
+/* SIMPLE RESET */
+
+body {
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    /* TABLET SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; /* 18px */
+    }
+    .container {    
+        max-width: 1200px;
+    }
+}
+
+/* FOR DEMO PURPOSES ONLY */
+
+body.demo {
+    padding-top: 2em;
+}
+
+body.demo:before {
+    content: "small (mobile) less than 768px";
+    background-color: rgb(185, 142, 92);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: white;
+    padding: .5em;
+}
+
+@media (min-width: 768px) {
+    body.demo:before {
+        content: "midsize (tablet) 768px - 1050px";
+        background-color: rgb(119, 82, 88);
+    }
+}
+
+@media (min-width: 1050px) {
+    body.demo:before {
+        background-color:rgb(98, 82, 119);
+        content: "large (notebook) 1050px - 1250px";
+    }
+}
+
+@media (min-width: 1250px) {
+    body.demo:before {
+        background-color:rgb(52, 59, 78);
+        content: "extra large (desktop) 1250px +"
+    }
+}
+
+/* SEMANTIC GRID SYSTEM */
+
+.row > .column {
+    margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+    .row {
+        margin-left: -1%;
+        margin-right: -1%;
+        display: flex;
+        justify-content: center;
+    }
+    .row.swapped {
+        flex-direction: row-reverse;
+    }
+    .row.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row > .column {
+        margin: 0 1% 2% 1%;
+        flex-grow: 1;
+    }
+
+    .row > .column.one-half {
+        max-width: 48%;
+    }
+
+    .row > .column.one-third {
+        max-width: 31.3333%;
+    }
+
+    .row > .column.two-thirds {
+        max-width: 64.6666%;
+    }
+
+    .row > .column.one-fourth {
+        max-width: 23%;
+    }
+
+    .row > .column.three-fourths {
+        max-width: 73%;
+    }
+
+    .row > .column.push-one-third {
+        margin-left: 34.3333%;
+    }
+
+    .row > .column.push-one-fourth {
+        margin-left: 26%;
+    }
+}
+
+/* FOR DEMO PURPOSES ONLY */
+
+.demo .column {
+    padding: 1em;
+    background: rgb(219, 206, 194);
+    text-align: center;
+}
+
+.demo .column p {
+    margin: 0;
+    padding: 0 0.5em;
+    max-width: none;
+}
+
+.demo {
+    padding: 2em 0;
 }
