@@ -26,7 +26,7 @@ header {
 }
 
 header a {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
@@ -152,7 +152,7 @@ header {
 }
 
 .courses a {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
@@ -215,7 +215,7 @@ section {
 
 .page-sub a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .page-sub a:hover {
