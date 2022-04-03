@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8" />
 
-    <title>Base | Single Page Site</title>
+    <title>Kaimuki Dry Goods | Coded Draft #1</title>
 
     <meta name="description"
         content="SiteBase: a minimalistic HTML + CSS + JS base front-end framework for simple web site projects." />
@@ -20,7 +20,9 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-
+    <!-- TYPOGRAPHY -->
+    <link rel="stylesheet" href="https://use.typekit.net/tkz5otb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tkz5otb.css">
 
 </head>
 
@@ -32,10 +34,7 @@
 
             <div class="site-id">
 
-                <h1>
-                <a href="#top" class="scroll">Site Name</a>
-                <span class="hidden-sm"> / Single Page Version</span>
-                </h1>
+                <a href="#top" class="scroll"></a>
 
             </div>
 
@@ -44,9 +43,12 @@
                 <button class="menu-button navicon">Menu</button>
                 <ul class="nav">
 
-                <li><a class="scroll" href="#top">Home</a></li>
-                <li><a class="scroll" href="#about">About</a></li>
-                <li><a class="scroll" href="#contact">Contact</a></li>
+                <li><a class="scroll button" href="#top">Home</a></li>
+                <li><a class="scroll button" href="#about">About Us</a></li>
+                <li><a class="scroll button" href="#new">New Arrivals</a></li>
+                <li><a class="scroll button" href="#popular">Popular Prints</a></li>
+                <li><a class="scroll button" href="#notions">Notions</a></li>
+                <li><a class="scroll button" href="#contact">Contact Us</a></li>
 
                 </ul>
 
@@ -64,12 +66,9 @@
 
             <div class="container">
         
-                    <h1>This is the Hero&nbsp;Section</h1>
+                    <h1>KAIMUKI DRY GOODS, LTD.</h1>
 
-                    <p>This is the Hero Section on the top of the single page site.</p>
-        
-                        <a href="#about" class="scroll button">Learn More About Us</a>
-                        <a href="#contact" class="scroll button alt">Get In Touch</a>
+                    <p>Serving Hawaii's fashion needs since 1926.</p>
 
             </div>
 
@@ -77,49 +76,26 @@
 
             <!-- END CONTAINER -->
 
-        <section>
+        <section id="about">
 
             <div class="container">
                 
                 <div class="row">
 
-                    <div class="column one-third">
+                    <div class="one-fourth column">
 
-                        <img src="img/placeholder-1x1.gif" alt="square 1x1 placeholder image" width="1500" height="1500">
-
-                            <h2>Heading 2</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Corrupti debitis explicabo dolorem quae asperiores laudantium 
-                    porro fugiat odio quaerat atque.</p>
-
-                    <a href="#" class="button">Button</a>
+                        <img src="img/sewingmachine_drawing.png" alt="illustration of a sewing machine" width="1500" height="1500">
 
                     </div>
 
-                    <div class="column one-third">
+                    <div class="one-fourth column">
 
-                        <img src="img/placeholder-1x1.gif" alt="square 1x1 placeholder image" width="1500" height="1500">
-                <h2>Heading 2</h2>
+                        <h2>About Us</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Corrupti debitis explicabo dolorem quae asperiores laudantium 
-                    porro fugiat odio quaerat atque.</p>
-
-                    <a href="#" class="button">Button</a>
-
-                    </div>
-
-                    <div class="column one-third">
-
-                        <img src="img/placeholder-1x1.gif" alt="square 1x1 placeholder image" width="1500" height="1500">
-                <h2>Heading 2</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Corrupti debitis explicabo dolorem quae asperiores laudantium 
-                    porro fugiat odio quaerat atque.</p>
-
-                    <a href="#" class="button">Button</a>
+                        <p>Originally owned by Mr. and Mrs. Takao
+                        Ozawa, Kaimuki Dry Goods first opened
+                        their doors in 1926. The store had been
+                        passed on from generation to generation. Through the years they have transitioned from a general dry goods store into the fabric store we know and love today.</p>
 
                     </div>
 
@@ -127,63 +103,39 @@
                 
             </div>
 
-                <!-- END CONTAINER -->
+        </section>
+
+        <section id="new">
+            
+            <div class="container">
+
+                <h2>New Arrivals</h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore ab dignissimos recusandae, pariatur excepturi voluptatum voluptatem eum beatae ipsam voluptates cupiditate provident autem neque? Dignissimos, assumenda est accusantium magnam odio asperiores ad tenetur magni quibusdam eum quaerat quod incidunt maiores facere sequi, doloribus inventore cum aliquam iure reiciendis aperiam iste hic! Iusto velit numquam vel! Hic voluptatum excepturi tempore nulla perferendis iste ipsam, rem corrupti molestias quasi amet ea recusandae unde? Exercitationem, hic iure. Fuga error repellendus quia corrupti sint aspernatur rem et? Ab obcaecati blanditiis omnis perferendis amet earum vel eum sequi cupiditate recusandae placeat debitis, beatae doloribus?</p>
+            </div>
 
         </section>
 
-        <section id="about">
-
+        <section id="popular">
+            
             <div class="container">
 
-                <h3 class="section-title">About Us</h3>
+                <h2>Popular Prints</h2>
 
-                <article>
-            
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-        
-                    <h2 class="subhead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
-        
-                    <div class="date">Date MM/DD/YYYY</div>
-        
-                    <p>Sed faucibus egestas ultricies. Vivamus enim auctor hendrerit elit. Morbi facilisis tempus orci, sed placerat metus auctor non. Etiam non lacus erat, sit amet porttitor tellus. Curabitur pretium tincidunt tortor in vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi quam eros, bibendum ut pellentesque id, tristique eget lacus. Ut fermentum ligula vitae est luctus at iaculis nunc placerat.</p>
-        
-                    <p>Vestibulum urna erat, viverra in dignissim quis, bibendum lobortis sapien. Integer porttitor magna ut orci aliquam sed suscipit eros adipiscing. Pellentesque feugiat mi id eros placerat sit amet hendrerit tortor ultricies. Praesent pellentesque lorem eget ligula egestas sit amet elementum lacus dignissim. Duis semper sapien id massa vehicula quis malesuada est molestie. Vestibulum ac nunc in metus egestas sodales. In dignissim luctus eros, non facilisis nisi vulputate vulputate. Cras bibendum venenatis ipsum, sed euismod quam rhoncus rhoncus. Nullam consectetur augue ac mi convallis nec tempor odio pellentesque.</p>
-        
-                    <h3>Nam ut metus sit amet odio tincidunt.</h3> 
-                    <h4 class="subhead">Tincidunt vitae a orci.</h4>
-        
-                    <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
-        
-                    <blockquote>Pellentesque rutrum, nunc sit amet adipiscing tempor, erat leo laoreet est, eu rhoncus risus elit quis lectus. Cras nulla tellus, sollicitudin quis commodo eget, commodo vel sapien.</blockquote>
-        
-                    <p>Auctor pretium elit. Nunc enim urna, accumsan sed ullamcorper eu, scelerisque gravida sapien. Phasellus tincidunt nunc elementum turpis ornare sit amet congue diam sodales. Sed interdum neque ut ipsum vestibulum euismod. Nulla nec purus ante. Praesent non diam et leo volutpat dictum in id erat. Donec elementum, leo ac blandit ornare, nunc nunc tincidunt mauris, sed ultricies lorem nibh quis lorem.</p>
-        
-                    <p>Morbi mauris mauris, aliquam eu sollicitudin id, sollicitudin sed nisl. Cras et nunc a leo pulvinar tincidunt. Suspendisse dignissim, sem sit amet consequat varius, eros enim ullamcorper eros, at tincidunt lacus dolor in turpis. Proin tempus ultricies mauris. Sed eu tortor nisi. Pellentesque non nisi justo, vel suscipit orci. Integer dolor metus, scelerisque aliquet sollicitudin sit amet, posuere at mauris. Nunc sem tellus, consequat at pulvinar quis, fringilla vel libero. Integer faucibus fermentum eros.</p>
-        
-                    <h3>Proin non ipsum ligula, ornare semper purus.</h3>
-        
-                    <p>Morbi tincidunt ligula sit amet nulla venenatis sit amet tristique nisl pretium. Nunc facilisis, orci et gravida blandit, lectus augue viverra augue, non tempus ligula leo nec arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eu elit quis sem posuere sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris congue dolor a magna accumsan eu pharetra mi porta. Cras eget interdum velit.</p>
-        
-                    <p>Aenean id nulla in dui iaculis adipiscing. Quisque commodo odio ut lacus auctor pellentesque. Pellentesque egestas pellentesque lorem sed imperdiet. Etiam porta egestas lectus eget interdum. Pellentesque purus neque, elementum non lobortis quis, vulputate ac metus. Etiam et purus a justo accumsan consequat eu elementum ligula. Nullam blandit pretium augue, vitae suscipit mauris lobortis sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar leo.</p>
-        
-                    <h3>Nam ut metus sit amet odio tincidunt tincidunt vitae a orci.</h3>
-        
-                    <p>Maecenas at urna sapien, in lobortis tellus. Morbi eget felis eget tellus dapibus pellentesque. Duis dapibus pulvinar ipsum eu dapibus. Suspendisse potenti. Etiam sollicitudin velit eget nisi vulputate eu semper quam semper. Sed vitae ipsum quam. Nunc sed purus nisl, sit amet luctus nisi. Ut enim massa, sagittis et commodo eget.</p>
-        
-                    <p>Auctor pretium elit. Nunc enim urna, accumsan sed ullamcorper eu, scelerisque gravida sapien. Phasellus tincidunt nunc elementum turpis ornare sit amet congue diam sodales. Sed interdum neque ut ipsum vestibulum euismod. Nulla nec purus ante. Praesent non diam et leo volutpat dictum in id erat. Donec elementum, leo ac blandit ornare, nunc nunc tincidunt mauris, sed ultricies lorem nibh quis lorem.</p>
-        
-                    <p>Morbi mauris mauris, aliquam eu sollicitudin id, sollicitudin sed nisl. Cras et nunc a leo pulvinar tincidunt. Suspendisse dignissim, sem sit amet consequat varius, eros enim ullamcorper eros, at tincidunt lacus dolor in turpis. Proin tempus ultricies mauris. Sed eu tortor nisi. Pellentesque non nisi justo, vel suscipit orci. Integer dolor metus, scelerisque aliquet sollicitudin sit amet, posuere at mauris. Nunc sem tellus, consequat at pulvinar quis, fringilla vel libero. Integer faucibus fermentum eros.</p>
-        
-                    <h3>Aenean tristique odio et dui scelerisque scelerisque porta od.</h3>
-        
-                    <p>Proin non ipsum ligula, ornare semper purus. Morbi tincidunt ligula sit amet nulla venenatis sit amet tristique nisl pretium. Nunc facilisis, orci et gravida blandit, lectus augue viverra augue, non tempus ligula leo nec arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam eu elit quis sem posuere sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris congue dolor a magna accumsan eu pharetra mi porta. Cras eget interdum velit.</p>
-        
-                    <p>Aenean id nulla in dui iaculis adipiscing. Quisque commodo odio ut lacus auctor pellentesque. Pellentesque egestas pellentesque lorem sed imperdiet. Etiam porta egestas lectus eget interdum. Pellentesque purus neque, elementum non lobortis quis, vulputate ac metus. Etiam et purus a justo accumsan consequat eu elementum ligula. Nullam blandit pretium augue, vitae suscipit mauris lobortis sed. Nam iaculis sem at elit placerat sollicitudin. Ut quis pulvinar leo.</p>
-        
-                </article>
-
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore ab dignissimos recusandae, pariatur excepturi voluptatum voluptatem eum beatae ipsam voluptates cupiditate provident autem neque? Dignissimos, assumenda est accusantium magnam odio asperiores ad tenetur magni quibusdam eum quaerat quod incidunt maiores facere sequi, doloribus inventore cum aliquam iure reiciendis aperiam iste hic! Iusto velit numquam vel! Hic voluptatum excepturi tempore nulla perferendis iste ipsam, rem corrupti molestias quasi amet ea recusandae unde? Exercitationem, hic iure. Fuga error repellendus quia corrupti sint aspernatur rem et? Ab obcaecati blanditiis omnis perferendis amet earum vel eum sequi cupiditate recusandae placeat debitis, beatae doloribus?</p>
             </div>
+            
+        </section>
 
+        <section id="Notions">
+            
+            <div class="container">
+
+                <h2>Notions</h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore ab dignissimos recusandae, pariatur excepturi voluptatum voluptatem eum beatae ipsam voluptates cupiditate provident autem neque? Dignissimos, assumenda est accusantium magnam odio asperiores ad tenetur magni quibusdam eum quaerat quod incidunt maiores facere sequi, doloribus inventore cum aliquam iure reiciendis aperiam iste hic! Iusto velit numquam vel! Hic voluptatum excepturi tempore nulla perferendis iste ipsam, rem corrupti molestias quasi amet ea recusandae unde? Exercitationem, hic iure. Fuga error repellendus quia corrupti sint aspernatur rem et? Ab obcaecati blanditiis omnis perferendis amet earum vel eum sequi cupiditate recusandae placeat debitis, beatae doloribus?</p>
+            </div>
+            
         </section>
 
         <section id="contact">

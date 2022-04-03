@@ -9,9 +9,9 @@ a:hover { color: rgb(0, 51, 153, 1); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 /* HEADER */
