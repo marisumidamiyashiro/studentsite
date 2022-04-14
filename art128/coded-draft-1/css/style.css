@@ -55,7 +55,7 @@ body {
 
 /* TYPOGRAPHY */
 body {
-    font-family: bilo,sans-serif;
+    font-family: bilo, sans-serif;
     font-weight: 100;
     font-style: normal;
     line-height: 1.5;
@@ -67,13 +67,14 @@ h1 {
     font-family: urw-antiqua, serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 2em;
+    font-size: 4em;
     line-height: .5;
     text-transform: uppercase;
+    color:rgb(89, 69, 54);
 }
 
 h2 {
-    font-family: bilo,sans-serif;
+    font-family: bilo, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.5em;
@@ -88,7 +89,6 @@ a {
     flex-direction: column;
     font-size: 75%;
     text-transform: uppercase;
-
 }
 
 /* #IMAGES */
@@ -98,23 +98,9 @@ img {
     height: auto;
 }
 
-.kaimuki {
-    margin-top: 5em;
-    width: 800px;
-    margin-left: -30em;
-}
-
-.deedee {
-    position: absolute;
-    top: 1em;
-    left: auto;
-    overflow: none;
-}
-
 /* BUTTONS */
 
-button,
-a.button {
+.nav a {
     display: inline-block;
     background-color: rgba(167, 141, 127);
     border: 2px solid white;
@@ -122,13 +108,12 @@ a.button {
     padding: 0.75em 1em;
     border-radius: 1.5em;
     margin: 2em 0;
-    width: 150px;
+    width: 200px;
     cursor: pointer;
     line-height: 1;
 }
 
-button:hover,
-a.button:hover {
+.nav a:hover {
     background-color: rgb(89, 69, 54);
     color: white;
     border: 2px solid rgb(89, 69, 54);
@@ -156,11 +141,22 @@ body {
     padding: 0 4%;
 }
 
-.hero-header {
-    max-width: 1000px;
-    margin: 0 30em;
-    padding: 0 4%;
+/* MEDIA QUERIES */
+
+/* @media (min-width: 1050px) {
+    body {
+        font-size: 100%; 
+    }
 }
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; 
+    }
+    .container {    
+        max-width: 1200px;
+    }
+} */
 
 /* GRID */
 
@@ -196,8 +192,8 @@ body {
 
 .header {
     display: flex;
-    
 }
+
 /* SITE NAV */
 
 .site-nav ul {
@@ -220,6 +216,28 @@ body {
 
 /* HERO */
 
+.hero {
+    position: relative;
+    margin-top: 15em;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 7em;
+    left: 2em;
+}
+
+.hero p {
+    position: absolute;
+    font-size: 1.5em;
+    color:rgb(89, 69, 54);
+    bottom: 18em;
+    left: 18em;
+}
+
+.hero h1, .hero p {
+    background-color: rgba(255, 241, 233, 0.5);
+}
 
 /* ABOUT US */
 
@@ -244,6 +262,8 @@ body {
 }
 
 #new, #popular, #notions {
-    background-color: rgba(167, 141, 127, 0.452);
+    background-color: rgba(255, 241, 233, 0.2);
     color:rgb(89, 69, 54);
+    padding: 0 0 1.5em 0;
+    margin: 1em 0 1em 0;
 }
