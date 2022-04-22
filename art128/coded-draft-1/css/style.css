@@ -68,7 +68,7 @@ h1 {
     font-weight: 900;
     font-style: normal;
     font-size: 4em;
-    line-height: .5;
+    line-height: .8;
     text-transform: uppercase;
     color:rgb(89, 69, 54);
 }
@@ -85,8 +85,6 @@ h2 {
 
 a {
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
     font-size: 75%;
     text-transform: uppercase;
 }
@@ -100,22 +98,23 @@ img {
 
 /* BUTTONS */
 
-.nav a {
+.header a {
     display: inline-block;
     background-color: rgba(167, 141, 127);
     border: 2px solid white;
     color: rgb(255, 255, 255);
-    padding: 0.75em 1em;
-    border-radius: 1.5em;
-    margin: 2em 0;
+    padding: 12px 16px;
+    border-radius: 24px;
+    margin: 32px 0;
     width: 200px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     line-height: 1;
 }
 
-.nav a:hover {
+.site-nav a:hover {
     background-color: rgb(89, 69, 54);
-    color: white;
     border: 2px solid rgb(89, 69, 54);
     text-decoration: none;
 }
@@ -136,14 +135,14 @@ body {
 
 .container{
     text-align: center;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%;
 }
 
 /* MEDIA QUERIES */
 
-/* @media (min-width: 1050px) {
+@media (min-width: 1050px) {
     body {
         font-size: 100%; 
     }
@@ -156,7 +155,7 @@ body {
     .container {    
         max-width: 1200px;
     }
-} */
+}
 
 /* GRID */
 
@@ -187,6 +186,10 @@ body {
     max-width: 25%;
 }
 
+.row > .one-half {
+    max-width: 50%;
+}
+
 
 /* HEADER */
 
@@ -197,8 +200,8 @@ body {
 /* SITE NAV */
 
 .site-nav ul {
-    margin-top: 10em;
-    margin-left: 3em;
+    margin-top: 160px;
+    margin-left: 48px;
     list-style: none;
     display: inline-block;
     flex-direction: column;
@@ -206,7 +209,7 @@ body {
 
 .site-nav a {
     display: block;
-    padding: 1em;
+    padding: 16px;
 }
 
 .site-nav .menu-button {
@@ -218,28 +221,35 @@ body {
 
 .hero {
     position: relative;
-    margin-top: 15em;
+    margin-top: 150px;
 }
 
-.hero h1 {
+.hero-textbox {
     position: absolute;
-    bottom: 7em;
-    left: 2em;
+    padding: 3em;
+    width: 100%;
+    bottom: 5%;
+    left: 0px;
+    background-color: rgba(255, 241, 233, 0.3);
 }
 
 .hero p {
-    position: absolute;
     font-size: 1.5em;
+    font-weight: 400;
     color:rgb(89, 69, 54);
-    bottom: 18em;
-    left: 18em;
 }
 
 .hero h1, .hero p {
-    background-color: rgba(255, 241, 233, 0.5);
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 /* ABOUT US */
+
+#about {
+    margin: 100px;
+}
 
 .about {
     border-radius: 25px;
@@ -264,6 +274,17 @@ body {
 #new, #popular, #notions {
     background-color: rgba(255, 241, 233, 0.2);
     color:rgb(89, 69, 54);
-    padding: 0 0 1.5em 0;
-    margin: 1em 0 1em 0;
+    padding: 0 0 24px 0;
+    margin: 16px 0 16px 0;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(89, 69, 54);
+}
+
+.footer a {
+    color: white;
+    font-size: 1.5em;
 }
