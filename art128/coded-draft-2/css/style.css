@@ -1,0 +1,290 @@
+/* GLOBAL RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* #BASE CSS (Initital Setup)
+---------------------------------
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+        #MEDIA
+            #IMAGES
+        #COMPONENTS
+            #BUTTONS
+    #BASE LAYOUT
+        #SIMPLE RESET
+        #MEDIAQUERIES
+        #CONTAINER
+        #GRID SYSTEM
+            #CLEARFIX
+    #BASE SITE
+        #SITE STRUCTURE
+            #HEADER
+                # site-id (LOGO)
+            #FOOTER
+            #SECTIONS
+            #SUB PAGES
+        #SITE NAVIGATION
+            #TOGGLE-NAV (Default for Small Screens)
+    #SUB PAGES
+    #CUSTOM SITE CSS
+--------------------------------- */
+
+/* #TYPOGRAPHY */
+
+/* Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+*/
+
+/* GLOBAL COLORS */
+body {
+    background: rgb(155, 138, 118);
+    color: white;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: bilo, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+/* HEADINGS */
+
+h1 {
+    font-family: urw-antiqua, serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4em;
+    line-height: .8;
+    text-transform: uppercase;
+    color:rgb(89, 69, 54);
+}
+
+h2 {
+    font-family: bilo, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    font-size: 75%;
+    text-transform: uppercase;
+}
+
+/* #IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* BUTTONS */
+
+.header a {
+    display: inline-block;
+    background-color: rgba(167, 141, 127);
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    border-radius: 24px;
+    margin: 32px 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.site-nav a:hover {
+    background-color: rgb(89, 69, 54);
+    border: 2px solid rgb(89, 69, 54);
+    text-decoration: none;
+}
+
+/* LAYOUT */
+
+* {
+    box-sizing: border-box;
+}
+
+/* SIMPLE RESET */
+
+body {
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.container{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; 
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; 
+    }
+    .container {    
+        max-width: 1200px;
+    }
+}
+
+/* GRID */
+
+.row > .column {
+    margin-bottom: 2%;
+}
+
+.row {
+    margin-left: -1%;
+    margin-right: -1%;
+    display: flex;
+    justify-content: center;
+}
+.row.swapped {
+    flex-direction: row-reverse;
+}
+.row.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row > .column {
+    margin: 0 1% 2% 1%;
+    flex-grow: 1;
+}
+
+.row > .one-fourth {
+    max-width: 25%;
+}
+
+.row > .one-half {
+    max-width: 50%;
+}
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+}
+
+/* SITE NAV */
+
+.site-nav ul {
+    margin-top: 160px;
+    margin-left: 48px;
+    list-style: none;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.site-nav a {
+    display: block;
+    padding: 16px;
+}
+
+.site-nav .menu-button {
+    display: none;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    margin-top: 150px;
+}
+
+.hero-textbox {
+    position: absolute;
+    padding: 3em;
+    width: 100%;
+    bottom: 5%;
+    left: 0px;
+    background-color: rgba(255, 241, 233, 0.3);
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: 400;
+    color:rgb(89, 69, 54);
+}
+
+.hero h1, .hero p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* ABOUT US */
+
+#about {
+    margin: 100px;
+}
+
+.about {
+    border-radius: 25px;
+    background-color: rgb(89, 69, 54);
+    padding: 1.5em;
+}
+
+/* PRODUCTS */
+
+.fabric {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#new, #popular, #notions {
+    background-color: rgba(255, 241, 233, 0.2);
+    color:rgb(89, 69, 54);
+    padding: 0 0 24px 0;
+    margin: 16px 0 16px 0;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(89, 69, 54);
+}
+
+.footer a {
+    color: white;
+    font-size: 1.5em;
+}
