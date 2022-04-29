@@ -84,9 +84,14 @@ h2 {
 /* LINKS */
 
 a {
+    color:rgb(89, 69, 54);
     text-decoration: none;
     font-size: 75%;
     text-transform: uppercase;
+}
+
+a:hover {
+    color:rgb(255, 255, 255);
 }
 
 /* #IMAGES */
@@ -98,7 +103,7 @@ img {
 
 /* BUTTONS */
 
-.header a {
+.site-nav a {
     display: inline-block;
     background-color: rgba(167, 141, 127);
     border: 2px solid white;
@@ -141,6 +146,12 @@ body {
 }
 
 /* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+}
 
 @media (min-width: 1050px) {
     body {
@@ -193,7 +204,7 @@ body {
 
 /* HEADER */
 
-.header {
+.site-header {
     display: flex;
 }
 
