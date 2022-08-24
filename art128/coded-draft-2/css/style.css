@@ -247,10 +247,6 @@ body {
 
 /* HEADER */
 
-.site-id {
-    display: block;
-}
-
 @media (min-width: 768px) {
     .site-header .container {
         display: flex;
