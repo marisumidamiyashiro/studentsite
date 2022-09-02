@@ -47,7 +47,6 @@ header a:hover {
     }
 }
 
-
 /* HEADER ANIMATION */
 
 @keyframes fadeanddropIn {
@@ -258,6 +257,7 @@ aside {
     display: block;
     padding: 1em;
 }
+
 /*  STYLING FOR SUB PAGES */
 .page-sub .hero {
     background-color:rgb(247, 212, 244);
@@ -276,6 +276,11 @@ aside {
     margin: 2em;
 }
 
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0px;
+    }
 
 
 
