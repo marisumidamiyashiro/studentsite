@@ -183,11 +183,11 @@ section {
 }
 
 .coursework li {
-    color:rgba(72, 105, 255, 0.4);
+    color:rgba(255, 215, 250, 0.473);
 }
 
 .coursework a {
-    color:rgb(255, 255, 255);
+    color:rgba(255, 148, 223, 0.74);
     text-decoration: none;
 }
 
