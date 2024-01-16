@@ -1,11 +1,24 @@
 /* GLOBAL RESET */
-* { box-sizing: border-box; }
-body { margin: 0; }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
 
 /* GLOBAL COLORS */
-body { color: rgba(0, 0, 0, 0.8); }
-a { color: rgb(05, 102, 204, 1); }
-a:hover { color: rgb(0, 51, 153, 1); }
+body {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+    color: rgb(05, 102, 204, 1);
+}
+
+a:hover {
+    color: rgb(0, 51, 153, 1);
+}
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -18,7 +31,7 @@ body {
 
 header {
     background-color: rgb(247, 212, 244);
-    color: rgba(0, 0, 0, 0.8); 
+    color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,6 +57,7 @@ header a:hover {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -82,7 +96,7 @@ header a:hover {
 /* MAIN */
 
 main {
-    background: rgba (0,0,0,.05)
+    background: rgba (0, 0, 0, .05)
 }
 
 /* HERO SECTION */
@@ -92,8 +106,9 @@ header {
     width: 100%;
     background-color: transparent;
 }
+
 .hero {
-    background-image: url("../img/suspensionbridge.jpg") ;
+    background-image: url("../img/suspensionbridge.jpg");
     background-position: center;
     background-size: cover;
     padding: 30em 1em 6em 1em;
@@ -101,7 +116,7 @@ header {
 }
 
 .hero h2 {
-    color:rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-family: "Audiowide", sans-serif;
     font-size: 6em;
     line-height: 1;
@@ -112,7 +127,7 @@ header {
 .hero p {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     max-width: 40em;
     margin: 1em auto;
 }
@@ -146,7 +161,7 @@ header {
 }
 
 .courses h3 {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -183,16 +198,16 @@ section {
 }
 
 .coursework li {
-    color:rgba(255, 215, 250, 0.473);
+    color: rgba(255, 148, 223, 0.74);
 }
 
 .coursework a {
-    color:rgba(255, 148, 223, 0.74);
+    color: rgba(255, 215, 250, 0.87);
     text-decoration: none;
 }
 
 .coursework a:hover {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 /* NOTES STYLING */
@@ -208,7 +223,7 @@ section {
 }
 
 .page-sub a:hover {
-    color:rgb(255, 255, 255, 1);
+    color: rgb(255, 255, 255, 1);
 }
 
 /*  SIDEBAR/ASIDE */
@@ -221,11 +236,12 @@ aside {
         display: grid;
         grid-template-columns: 20em auto;
 
-}
+    }
+
     .two-col-sidebar aside {
-    border-right: 1px solid rgba(255, 255, 255, 0.575);
-    margin: 0 3em 2em 0;
-    padding: .3em 2em 0 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.575);
+        margin: 0 3em 2em 0;
+        padding: .3em 2em 0 0;
     }
 }
 
@@ -245,7 +261,7 @@ aside {
 
 /*  STYLING FOR SUB PAGES */
 .page-sub .hero {
-    background-color:rgb(247, 212, 244);
+    background-color: rgb(247, 212, 244);
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -265,7 +281,7 @@ aside {
 
 ::-webkit-scrollbar {
     width: 0px;
-    }
+}
 
 
 
