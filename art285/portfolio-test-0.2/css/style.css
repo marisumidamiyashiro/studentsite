@@ -20,7 +20,7 @@ body {
   background: linear-gradient(90deg, #d1b5ad, #f7dada);
 }
 
-.main-menu {
+.site-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
   z-index: 10;
   padding-top: 15px;
 }
-.main-menu li {
+.site-nav li {
   position: relative;
   display: block;
   width: 180px;
@@ -40,16 +40,16 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-.main-menu li:hover,
-.main-menu li .active {
+.site-nav li:hover,
+.site-nav li .active {
   text-decoration: none;
   background-color: rgb(209, 181, 173);
 }
-.main-menu li a:focus {
+.site-nav li a:focus {
   color: rgb(111, 87, 84);
   background-color: rgb(247, 218, 218);
 }
-.main-menu li a {
+.site-nav li a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,10 +59,10 @@ body {
   transition: all 0.1s linear;
   padding: 15px 0;
 }
-.main-menu li a:hover {
+.site-nav li a:hover {
   color: rgb(111, 87, 84);
 }
-.main-menu:hover {
+.site-nav:hover {
   width: 180px;
   overflow: visible;
 }
@@ -79,28 +79,35 @@ body {
   height: 25px;
 }
 
-.wrapper {
+.projects {
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  justify-content: center;
+}
+.projects .section-title {
   display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.projects .work {
+  display: flex;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 25px;
 }
-
-.card {
+.projects .card {
   position: relative;
-  width: 325px;
-  height: 325px;
+  width: 400px;
+  height: 400px;
   background: #ccc;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.card .poster {
+.projects .card .poster {
   position: relative;
   top: 0;
   left: 0;
@@ -108,7 +115,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
-.card .poster img {
+.projects .card .poster img {
   position: absolute;
   top: 0;
   left: 0;
@@ -117,30 +124,37 @@ body {
   object-fit: cover;
   transition: 0.3s;
 }
-.card .details {
+.projects .card .details {
   position: absolute;
   bottom: -100%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 75%;
   padding: 1.5em 1.5em 2em;
   background: rgba(247, 218, 218, 0.9);
   transition: 0.3s;
   color: rgb(111, 87, 84);
   z-index: 2;
 }
-.card .details h1 {
+.projects .card .details h1,
+.projects .card .details h2 {
   color: #443e44;
   text-transform: uppercase;
   font-family: helvetica;
 }
-.card .details .desciption {
+.projects .card .details h1 {
+  font-size: 2em;
+}
+.projects .card .details h2 {
+  font-size: 1em;
+}
+.projects .card .details .desciption {
   color: rgb(111, 87, 84);
   opacity: 0.8;
   line-height: 1.5;
   margin-bottom: 1em;
 }
-.card .details .tags {
+.projects .card .details .tags {
   display: flex;
   gap: 0.375em;
   margin-bottom: 0.875em;
@@ -150,7 +164,7 @@ body {
   font-style: normal;
   padding: 0.5em;
 }
-.card .details .tags span {
+.projects .card .details .tags span {
   padding: 0.5rem 1rem;
   color: rgb(111, 87, 84);
   background: rgb(209, 181, 173);
@@ -172,4 +186,35 @@ body {
 
 .card:hover .details {
   bottom: 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero .about {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-family: "Lucida Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(3em, 15vw, 15em);
+}
+
+h2 {
+  font-size: clamp(1em, 10vw, 10em);
+}
+
+p {
+  width: 25vw;
 }
