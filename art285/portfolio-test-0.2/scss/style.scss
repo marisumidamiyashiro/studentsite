@@ -1,0 +1,25 @@
+// light pink - rgb(247, 218, 218) | #f7dada
+// sand - rgb(209, 181, 173) | #d1b5ad
+// coffee - rgb(111, 87, 84) | #6f5754
+
+/* VARIABLES */
+$light-pink: rgb(247, 218, 218);
+$sand: rgb(209, 181, 173);
+$coffee: rgb(111, 87, 84);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// body {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     min-height: 100vh;
+//     background: $sand;
+// }
+
+@import "partials/nav";
+@import "partials/cards";
