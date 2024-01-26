@@ -1,0 +1,121 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 0 1.5em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    h1 {
+        font-size: clamp(1em, 2vw, 2em);
+        z-index: 10;
+
+        a {
+            text-decoration: none;
+            color: $stars-color;
+        }
+    }
+}
+
+.site-nav {
+    display: flex;
+
+    .menu-button {
+        position: relative;
+        padding-right: 1em;
+        cursor: pointer;
+        z-index: 50;
+
+        svg {
+            fill: white;
+            rect {
+                transition: all .3s ease-out;
+            }
+        }
+    }
+
+    h2, li {
+        font-size: 1em;
+    }
+    
+    ul {
+        z-index: 20;
+        position: fixed;
+        font-size: .6em;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        margin: 0;
+        list-style: none;
+        line-height: 1;
+        transform: translate(100%,0);
+        transition: all .3s ease-out;
+    }
+    
+    a {
+        font-family: $font-family-title;
+        display: block;
+        text-decoration: none;
+        padding: 1em;
+        color: $stars-color;
+        font-size: clamp(2em, 2vw, 2em);
+
+        &:hover {
+            color: $font-body-color;
+        }
+    }
+    &[data-navstate="open"] {
+        ul {
+            background-color: rgba(0, 0 ,0, 1);
+            transform: translate(0,0);
+        }
+
+        .menu-button {
+            right: 1em;
+            position: fixed;
+            svg {
+                fill: white;
+            }
+        }
+        #menubar-top {
+            transform-origin: center;        
+            transform: translate(7px,7px) rotate(-45deg);        
+            }
+        
+        #menubar-mid {
+            opacity: 0;            
+            }  
+        
+        #menubar-bot {    
+            transform-origin: center;     
+            transform: translate(0,-4px) rotate(45deg);     
+        }   
+
+        li {
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }
+}
+
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    font-family: $font-family-body;
+    padding: 2em;
+    color: white;
+    position: fixed;
+    bottom: 0;
+
+    img {
+        opacity: .5;
+    }
+}
+

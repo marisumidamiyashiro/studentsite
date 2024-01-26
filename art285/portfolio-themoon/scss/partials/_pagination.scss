@@ -1,0 +1,80 @@
+/* PAGINATION */
+
+.swiper-pagination {
+
+    margin-right: 1em;
+    padding: 1em;
+
+    &.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 75px;
+    }
+
+    :nth-child(1) {
+        background-color: $background-color !important;
+    }
+
+    :nth-child(2) {
+        box-shadow: inset -9px 0 0 0px $moon-base;
+    }
+
+    :nth-child(3) {
+        position: relative;
+        overflow: hidden;
+        
+        &:after {
+            content: "";
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $moon-base;
+            border-radius: 0 100% 100% 0;
+        }
+    }
+
+    :nth-child(4) {
+        background: $moon-base !important;
+        box-shadow: inset 9px 0 0 0 $background-color;
+    }
+
+    :nth-child(5) {
+        background: $moon-base !important;
+        box-sizing: inset 0 0 14px 0 $background-color;
+        border-radius: 50%;
+    }
+
+    :nth-child(6) {
+        transform: rotate(180deg);
+        background: $moon-base !important;
+        box-shadow: inset 9px 0 0 0 $background-color;
+    }
+
+    :nth-child(7) {
+        transform: rotate(180deg);
+        position: relative;
+        overflow: hidden;
+        
+        &:after {
+            content: "";
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: $moon-base;
+            border-radius: 0 100% 100% 0;
+        }
+    }
+
+    :nth-child(8) {
+        transform: rotate(180deg);
+        box-shadow: inset -9px 0 0 0px $moon-base;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: $background-color !important;
+    padding: 1em;
+    border: 2px solid $moon-base;
+}

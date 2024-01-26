@@ -1,0 +1,12 @@
+
+h1 { 
+    color: $font-body-color;
+    font-family: $font-family-title;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: clamp(2em, 4vw, 4em);
+    line-height: 1em;
+    text-transform: uppercase;
+}

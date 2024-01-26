@@ -1,0 +1,53 @@
+
+@function randomShadows($count) {
+    $numberofstars: 3000;
+    $randomX: random($numberofstars);
+    $randomY: random($numberofstars);
+    $boxShadow: '#{$randomX}px #{$randomY}px #{$stars-color}';
+    @for $i from 1 through $count {
+    $randomX: random($numberofstars);
+    $randomY: random($numberofstars);
+    $boxShadow : $boxShadow + ', #{$randomX}px #{$randomY}px #{$stars-color}';
+    }
+    @return unquote($boxShadow);
+}
+
+.stars-bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.stars1 {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: randomShadows(500);
+    transition: all .2s linear;
+    animation: animStar 150s linear infinite;
+}
+
+.stars2 {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    box-shadow: randomShadows(500);
+    transition: all .2s linear;
+    animation: animStar 100s linear infinite;
+}
+
+.stars3 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: randomShadows(200);
+    transition: all .2s linear;
+    animation: animStar 300s linear infinite;
+}
+
+@keyframes animStar {
+    from {transform: translateX(0px)}
+    to {transform: translateX(-100vh)}
+}

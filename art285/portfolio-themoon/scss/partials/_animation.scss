@@ -1,0 +1,75 @@
+.swiper-slide-active {
+
+    h2 {
+        animation: focus-in-two .5s cubic-bezier(.55,.085,.68,.53) both;
+    }
+
+    .moon {
+        animation: focus-in-two .5s cubic-bezier(.55,.085,.68,.53) both;
+    }
+
+    .moon-wrapper {
+        animation: focus-in-one .3s cubic-bezier(.55,.085,.68,.53) both;
+    }
+
+}
+
+
+/* ANIMATION KEYFRAMES */
+
+@keyframes slide-down {
+    0% {
+        transform:translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-one {
+    0% {
+        filter:blur(12px);
+        opacity: 0
+    }
+        
+    100% {
+        filter:blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-two {
+    0% {
+        filter:blur(12px);
+        opacity: 0
+    }
+        
+    100% {
+        filter:blur(0);
+        opacity: 0.3;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px #D7BDE2 , 0 0 40px #AF7AC5, 0 0 50px #AF7AC5, 0 0 60px #D7BDE2, 0 0 70px #D7BDE2;
+    }
+
+    to {
+        text-shadow: 0 0 30px #fff, 0 0 40px #D7BDE2 , 0 0 50px #AF7AC5, 0 0 60px #AF7AC5, 0 0 70px #D7BDE2, 0 0 80px #D7BDE2;
+    }
+}

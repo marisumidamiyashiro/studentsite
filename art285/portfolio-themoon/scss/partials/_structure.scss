@@ -1,0 +1,140 @@
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(65deg, #000, #300b53);
+    background-size: 400% 400%;
+}
+
+/* SWIPER */
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* SLIDES */
+
+.swiper-slide {
+
+    width: 50%;
+    z-index: -50;
+
+    .body-text {
+
+        p {
+            font-family: $font-family-body;
+            color: $moon-base;
+            max-width: 30em;
+            margin-top: 1em;
+            font-size: 100%;
+        }
+    }
+}
+
+/* MOON PHASES */
+
+.phase-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+        letter-spacing: .1em;
+        text-shadow: 0 0 20px $stars-color;
+    }
+
+    .moon-wrapper {
+        margin-right: 2%;
+        width: 30%;
+    }
+
+    .text-wrapper {
+        width: 50%;
+        z-index: -10;
+
+        h2 {
+            position: absolute;
+            color: $stars-color;
+            font-size: clamp(4em, 6vw, 6em);
+            font-family: $font-family-overlay;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            right: 1em;
+            top: 1.5em;
+            opacity: 0.3;
+        }
+    }
+}
+
+/* MOON PHASES IN BACKGROUND */
+
+.moon {
+    position: absolute;
+    border: 1px solid $moon-base;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    border-radius: 100%;
+    right: 0;
+    margin: 5em;
+    opacity: .3;
+    z-index: -100;
+    text-shadow: 0 0 40px 0 #0ff;
+    ;
+}
+
+.waxingc {
+    box-shadow: inset -45px 0 0 0px $moon-base;
+}
+
+.first {
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $moon-base;
+    }
+}
+
+.waxingg {
+    background: $moon-base;
+    box-shadow: inset 45px 0 0 0 $background-color;
+}
+
+.full {
+    background: $moon-base;
+}
+
+.waningg {
+    transform: rotate(180deg);
+    background: $moon-base;
+    box-shadow: inset 45px 0 0 0 $background-color;
+}
+
+.third {
+    transform: rotate(180deg);
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $moon-base;
+    }
+}
+
+.waningc {
+    transform: rotate(180deg);
+    box-shadow: inset -45px 0 0 0px $moon-base;
+}

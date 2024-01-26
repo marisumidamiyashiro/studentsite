@@ -1,0 +1,32 @@
+/* VARIABLES */
+
+$font-body-color: rgb(226, 226, 226);
+$stars-color: rgba(255, 234, 194, 0.8);
+$moon-base: rgba(179, 179, 179, 1);
+$background-color: #130025;
+
+/* FONTS */
+
+$font-family-title: "tachyon", sans-serif;
+$font-family-body: futura-pt, sans-serif;
+$font-family-overlay: futura-pt, sans-serif;
+
+// BREAKPOINTS
+
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+/* IMPORTS */
+
+@import "partials/animation";
+@import "partials/toc";
+@import "partials/layout";
+@import "partials/media";
+@import "partials/structure";
+@import "partials/typography";
+@import "partials/stars";
+@import "partials/sitenav";
+@import "partials/pagination";
+@import "partials/helpers";
+@import "partials/preloader";
