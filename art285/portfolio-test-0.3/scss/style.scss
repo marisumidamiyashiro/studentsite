@@ -25,3 +25,8 @@ $coffee: rgb(111, 87, 84);
 @import "partials/cards";
 @import "partials/hero";
 @import "partials/typography";
+@import "partials/footer";
+
+.site-main {
+    padding: 0 95px;
+}

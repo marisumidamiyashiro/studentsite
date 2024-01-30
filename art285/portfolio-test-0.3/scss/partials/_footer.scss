@@ -1,0 +1,16 @@
+.site-footer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75px;
+    overflow: hidden;
+    background: rgba(111, 87, 84, 0.5);
+    transition: width .05s linear;
+    z-index: 10;
+
+    &:hover {
+        width: 200px;
+
+    }
+}
