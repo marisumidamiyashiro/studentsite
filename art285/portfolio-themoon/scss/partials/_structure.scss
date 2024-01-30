@@ -56,14 +56,14 @@ main {
         h2 {
             position: absolute;
             color: $stars-color;
-            font-size: clamp(2em, 3vw, 3em);
+            font-size: clamp(2em, 3.5vw, 3.5em);
             font-family: $font-family-overlay;
             font-weight: 700;
             font-style: normal;
             text-transform: uppercase;
             letter-spacing: .1em;
             right: 2em;
-            top: 3em;
+            top: 2em;
             opacity: 0.3;
         }
     }
