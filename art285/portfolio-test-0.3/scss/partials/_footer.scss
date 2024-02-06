@@ -9,8 +9,44 @@
     transition: width .05s linear;
     z-index: 10;
 
-    &:hover {
-        width: 200px;
+    li {
+        position: relative;
+        display: block;
+        width: 180px;
+        font-family: beloved-sans, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        outline: none;
 
+        &:hover {
+            text-decoration: none;
+            background-color: $light-pink;
+        }
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: $coffee;
+            font-size: 1rem;
+            transition: all 0.1s linear;
+            padding: 15px 0;
+            text-decoration: none;
+
+            &:hover {
+                color: $coffee;
+            }
+        }
     }
+
+    &:hover {
+        width: 180px;
+        overflow: visible;
+    }
+}
+
+.active {
+    color: $coffee;
+    background-color: $light-pink;
 }

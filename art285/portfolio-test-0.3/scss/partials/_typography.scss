@@ -1,5 +1,6 @@
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Lucida Sans', sans-serif;
     text-transform: uppercase;
 }
@@ -10,7 +11,12 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1em, 10vw, 10em);
+    font-size: clamp(2em, 10vw, 10em);
+    color: $coffee;
+}
+
+h3 {
+    font-size: clamp(1em, 5vw, 5em);
     color: $coffee;
 }
 
